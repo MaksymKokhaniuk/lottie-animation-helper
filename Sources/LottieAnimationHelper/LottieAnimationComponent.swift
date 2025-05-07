@@ -1,5 +1,5 @@
 //
-//  SwiftUIView.swift
+//  LottieAnimationComponent.swift
 //  LottieAnimationHelper
 //
 //  Created by MaxK on 07.05.2025.
@@ -8,7 +8,7 @@
 import SwiftUI
 import Lottie
 
-public struct SwiftUIView: View {
+public struct LottieAnimationComponent: View {
     
     public var fileName: String
     public var contentMode: UIView.ContentMode
@@ -37,5 +37,5 @@ public struct SwiftUIView: View {
 }
 
 #Preview {
-    SwiftUIView(animationFileName: "", contentMode: .scaleToFill, shouldPlay: false, playLoopMode: .playOnce)
+    LottieAnimationComponent(animationFileName: "", contentMode: .scaleToFill, shouldPlay: false, playLoopMode: .playOnce)
 }

@@ -4,27 +4,27 @@
 import PackageDescription
 
 let package = Package(
-    name: "LottieHelperKit",
+    name: "LottieAnimationHelper",
     platforms: [
         .iOS(.v14)
     ],
     products: [
         .library(
-            name: "LottieHelperKit",
-            targets: ["LottieHelperKit"]),
+            name: "LottieAnimationHelper",
+            targets: ["LottieAnimationHelper"]),
     ],
     dependencies: [
         .package(url: "https://github.com/airbnb/lottie-ios.git", from: "4.3.0")
     ],
     targets: [
         .target(
-            name: "LottieHelperKit",
+            name: "LottieAnimationHelper",
             dependencies: [
                 .product(name: "Lottie", package: "lottie-ios")
             ]
         ),
         .testTarget(
-            name: "LottieHelperKitTests",
-            dependencies: ["LottieHelperKit"]),
+            name: "LottieAnimationHelperTest",
+            dependencies: ["LottieAnimationHelper"]),
     ]
 )
